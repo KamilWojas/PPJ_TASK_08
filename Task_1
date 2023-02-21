@@ -1,0 +1,6 @@
+public void zad1() {
+        show(2);
+    }
+
+    private void show(int j) {
+    }
