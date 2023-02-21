@@ -1,0 +1,10 @@
+public void zad2() {
+        int wrt = 5;
+
+        System.out.println(wrt);
+        modifyValue(wrt);
+        System.out.println(wrt);
+    }
+
+    private void modifyValue(int wrt) {
+    }
