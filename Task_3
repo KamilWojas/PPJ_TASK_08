@@ -1,0 +1,23 @@
+public void zad3 (){
+            metoda3("ALA");
+        }
+
+        public void zad4(){
+            int[] tab1 = new int[randInt()];
+            int[] tab2 = new int[randInt()];
+
+            for (int i = 0; i < tab1.length; i++) {
+                tab1[i] = randInt();
+            }
+            for (int i = 0; i < tab2.length; i++) {
+                tab2[i] = randInt();
+            }
+
+            System.out.println(Arrays.toString(metoda4(tab1, tab2, 1)));
+
+            System.out.println(Arrays.toString(metoda4(tab1, tab2, 0)));
+
+            System.out.println(Arrays.toString(metoda4(tab1, tab2, -1)));
+        }
+
+    }
