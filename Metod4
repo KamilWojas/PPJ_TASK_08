@@ -1,0 +1,26 @@
+public static int[] metoda4(int[] a1, int[] a2, int i) {
+        int[] a3 = null;
+        if (i < 0 && a1.length != a2.length) {
+            a3 = new int[krotszaTabLength(a1, a2)];
+            for (int j = 0; j < a3.length; j++)
+                a3[j] = a1[j] + a2[j];
+        }
+        if (i > 0 && a1.length != a2.length) {
+            a3 = new int[dluzszaTabLength(a1, a2) - krotszaTabLength(a1, a2)];
+            for (int j = 0; j < a3.length; j++)
+                a3[j] = (a1.length > a2.length) ? a1[j + a1.length - a3.length] : a2[j + a2.length - a3.length];
+        }
+        return (a1.length == a2.length || i == 0) ? new int[0] : a3;
+    }
+
+    public static int dluzszaTabLength(int[] a1, int[] a2) {
+        return (a1.length < a2.length) ? a2.length : a1.length;
+    }
+
+    public static int krotszaTabLength(int[] a1, int[] a2) {
+        return (a1.length > a2.length) ? a2.length : a1.length;
+    }
+
+    public static int randInt() {
+        return (int) (Math.random() * 10);
+    }
