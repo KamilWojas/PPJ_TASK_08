@@ -1,0 +1,19 @@
+public void zad5() {
+        metoda5(9, true);
+    }
+
+    public static void metoda5(int i, boolean b) {
+
+        for (int k = 0; k < i; k++) {
+            for (int l = 0; l < i; l++)
+                if (b) {
+                    System.out.print("x");
+                    b = false;
+                } else {
+                    System.out.print("o");
+                    b = true;
+                }
+            System.out.println();
+        }
+
+    }
