@@ -1,0 +1,13 @@
+public static void metoda3(String s) {
+        char[] tab = {'A', 'l', 'a', ' ', 'm', 'a', ' ', 'k', 'o', 't', 'a'};
+
+        for (char c : s.toCharArray()) {
+            int i = 0;
+            System.out.print(c);
+            for (char d : tab)
+                if (c == d)
+                    i++;
+            System.out.print(" " + i);
+            System.out.println();
+        }
+    }
